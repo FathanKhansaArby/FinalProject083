@@ -1,5 +1,25 @@
 import streamlit as st
-
+import pickle
+import pandas as pd
+import numpy as np
+from sklearn import preprocessing
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LogisticRegression
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
+import seaborn as sns
+from sklearn.naive_bayes import GaussianNB
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import StandardScaler
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.utils import resample
+from sklearn.ensemble import RandomForestClassifier
+import pickle
+import sklearn.tree as tree
+from six import StringIO 
+from IPython.display import Image
 def head():
     st.title("Parkinsson Prediction")
     st.subheader('Based on Phyton Random Forest Classifier, up to 92 percent accuracy')
